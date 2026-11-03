@@ -1,0 +1,199 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <title>Portfolio 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="bar">
+    <div class="wrap">
+      <a class="brand" href="#top">Amit Halder</a>
+      <nav aria-label="Primary">
+        <a class="nl" href="#work">Work</a>
+        <a class="nl" href="#about">About</a>
+        <a class="nl" href="#contact">Contact</a>
+        <button class="theme" id="theme" type="button" aria-label="Switch color theme">
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+            <circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+    <div class="progress" id="progress"></div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="wrap">
+        <p class="mono">Portfolio · 2026</p>
+        <h1 class="name" id="name" aria-label="Amit Halder">
+          <span class="line" data-text="Amit">Amit</span>
+          <span class="line" data-text="Halder">Halder<span class="dot">.</span></span>
+        </h1>
+        <div class="hero-foot">
+          <div>
+            <p class="lede">Frontend engineer. I build interfaces that stay quick on slow phones and usable from a keyboard, and the small tools that make design handoff less lossy.</p>
+            <div class="cta">
+              <a class="btn solid" href="#work">See selected work <span class="arr" aria-hidden="true">→</span></a>
+              <a class="btn" href="#contact">Get in touch</a>
+            </div>
+          </div>
+          <dl class="facts">
+            <div><dt>Role</dt><dd>Frontend engineer</dd></div>
+            <div><dt>Status</dt><dd>Open to roles from January 2027</dd></div>
+            <div><dt>Hours</dt><dd><span class="live" id="live"><i></i><span id="live-text">10:00 – 18:00 IST</span></span></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="work">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Selected work</h2>
+          <p class="mono">Sample projects · 2024 to 2026</p>
+        </div>
+        <div class="work">
+          <article class="project reveal">
+            <div class="p-text">
+              <p class="mono">2026 · Web app</p>
+              <h3>Ledgerline</h3>
+              <p class="p-desc">A personal finance dashboard that turns bank exports into monthly cash-flow views. A canvas renderer and a virtualized table keep 50,000 transactions at 60 fps.</p>
+              <ul class="chips"><li>React</li><li>TypeScript</li><li>D3</li><li>Canvas</li></ul>
+              <a class="link" href="https://github.com/" target="_blank" rel="noopener">View source ↗</a>
+            </div>
+            <div class="viz" role="img" aria-label="Bar chart of eight months with a rising trend line">
+              <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+                <rect class="s-l" x="20" y="200" width="280" height="1"/>
+                <rect class="s-l" x="30" y="140" width="20" height="60"/>
+                <rect class="s-l" x="62" y="110" width="20" height="90"/>
+                <rect class="s-l" x="94" y="130" width="20" height="70"/>
+                <rect class="s-l" x="126" y="80" width="20" height="120"/>
+                <rect class="s-l" x="158" y="100" width="20" height="100"/>
+                <rect class="s-l" x="190" y="70" width="20" height="130"/>
+                <rect class="s-l" x="222" y="50" width="20" height="150"/>
+                <rect class="s-l" x="254" y="60" width="20" height="140"/>
+                <path class="s-line" d="M30 160 L62 150 L94 146 L126 120 L158 107 L190 93 L222 82 L254 72 L290 60"/>
+                <circle class="s-a" cx="290" cy="60" r="5"/>
+              </svg>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="p-text">
+              <p class="mono">2025 · Product design system</p>
+              <h3>Signal Forge</h3>
+              <p class="p-desc">A design system that codifies token logic and motion, so a small team can ship coherent UI without fighting handoff drift.</p>
+              <ul class="chips"><li>Design Tokens</li><li>Figma</li><li>React</li><li>Storybook</li></ul>
+              <a class="link" href="https://github.com/" target="_blank" rel="noopener">View source ↗</a>
+            </div>
+            <div class="viz" role="img" aria-label="Abstract pattern of stacked bars and a line chart">
+              <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+                <rect class="s-l" x="20" y="180" width="280" height="1"/>
+                <path class="s-line" d="M28 170 L80 130 L120 98 L170 110 L220 74 L272 48"/>
+                <rect class="s-l" x="42" y="145" width="28" height="35"/>
+                <rect class="s-l" x="84" y="112" width="28" height="68"/>
+                <rect class="s-a" x="126" y="82" width="28" height="98"/>
+                <rect class="s-l" x="168" y="118" width="28" height="62"/>
+                <rect class="s-a" x="210" y="90" width="28" height="90"/>
+                <rect class="s-l" x="252" y="58" width="28" height="122"/>
+              </svg>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="p-text">
+              <p class="mono">2024 · CLI</p>
+              <h3>Lantern</h3>
+              <p class="p-desc">An accessibility checker for design handoff. It flags contrast failures and broken focus order in exported frames before a developer opens them.</p>
+              <ul class="chips"><li>Node</li><li>Playwright</li><li>WCAG 2.2</li></ul>
+              <a class="link" href="https://github.com/" target="_blank" rel="noopener">View source ↗</a>
+            </div>
+            <div class="viz" role="img" aria-label="Grid of dots with a few highlighted and one outlined">
+              <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <pattern id="lantern-dots" width="32" height="32" patternUnits="userSpaceOnUse">
+                    <circle class="s-l" cx="16" cy="16" r="3.5"/>
+                  </pattern>
+                </defs>
+                <rect width="320" height="240" fill="url(#lantern-dots)"/>
+                <circle class="s-a" cx="80" cy="80" r="6"/>
+                <circle class="s-a" cx="144" cy="112" r="6"/>
+                <circle class="s-a" cx="208" cy="80" r="6"/>
+                <circle class="s-a" cx="240" cy="176" r="6"/>
+                <rect class="s-acc-ring" x="124" y="92" width="40" height="40" rx="4"/>
+              </svg>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="about">
+      <div class="wrap split">
+        <div class="stick">
+          <p class="mono">About</p>
+          <h2>Layouts that survive a 320px screen.</h2>
+        </div>
+        <div>
+          <p class="about-p reveal">I work from the design file to production. The part I enjoy most is making a layout hold up on a small phone, a slow connection and a keyboard-only session.</p>
+          <p class="about-p sm reveal">Recently I have been writing tooling around handoff: linters for design exports, build caches, and sync layers that behave on bad networks.</p>
+
+          <div class="kit reveal">
+            <div>
+              <h3>Interface</h3>
+              <ul><li>HTML and CSS</li><li>TypeScript</li><li>React and Svelte</li><li>Canvas and WebGL</li></ul>
+            </div>
+            <div>
+              <h3>Systems</h3>
+              <ul><li>Node</li><li>Rust</li><li>PostgreSQL</li><li>SQLite</li></ul>
+            </div>
+            <div>
+              <h3>Practice</h3>
+              <ul><li>Accessibility audits</li><li>Performance budgets</li><li>Design systems</li><li>End-to-end tests</li></ul>
+            </div>
+          </div>
+
+          <ol class="timeline reveal">
+            <li><span class="yr">2025 - now</span><div><h4>Frontend Engineer, Northwind Labs</h4><p>Owns the component library and the checkout flow. Cut the largest bundle by 38% with route-level splitting.</p></div></li>
+            <li><span class="yr">2024 - 2025</span><div><h4>Software Engineer, Brightcell</h4><p>Built the internal analytics dashboard and moved its charts from SVG to canvas.</p></div></li>
+            <li><span class="yr">2023 - 2024</span><div><h4>Engineering Intern, Brightcell</h4><p>Shipped accessibility fixes across the marketing site and wrote its first end-to-end test suite.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="contact">
+      <div class="wrap">
+        <p class="mono">Contact</p>
+        <h2 class="big reveal">Have a project or a role in mind? Tell me about it.</h2>
+        <div class="mail-row reveal">
+          <span class="email" id="email">amitunofficial2006@gmail.com</span>
+          <button class="btn" id="copy" type="button" aria-live="polite">Copy address</button>
+        </div>
+        <ul class="social reveal">
+          <li><a class="link" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="mono">© 2026 Amit Halder · One HTML file, no trackers</p>
+      <a class="mono" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
