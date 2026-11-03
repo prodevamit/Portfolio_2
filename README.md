@@ -80,6 +80,10 @@ To personalize the portfolio for your own use:
 - Google Fonts
 - CDN-based smooth scrolling library
 
+## Live Demo
+
+https://prodevamit.github.io/Portfolio_2/
+
 ## Notes
 
 This is a static portfolio site, so there is no build step or package installation required. It is ideal for quickly launching a personal website or portfolio landing page.
